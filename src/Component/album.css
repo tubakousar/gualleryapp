@@ -1,0 +1,605 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* landing page styling */
+.galery{
+    background-image: url(../image/gallerypaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 98vw;
+    height: 95vh;
+}
+.text{
+    position: relative;
+    top: 50%;
+    /* color: white; */
+    font-weight: 600;
+    padding: 40px;
+    font-size: 50px;
+}
+.aero{
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    right: 36%;
+}
+.password-pag{
+    align-content:center;
+    max-width:400px;
+     margin:90px auto ;
+     height:220px ; 
+     box-shadow: 0px 18px 71px -30px;
+
+}
+
+
+.album{
+    align-self:center; 
+    /* border:2px solid black; */
+    max-width:400px;
+     margin:90px auto ; 
+     box-shadow: 0px 18px 71px -30px ;
+     padding:40px;
+}
+.input-btn{
+    display: flex;
+}
+.input-btn Input{
+    width: 91%;
+    margin-left: 17px;
+    margin-right: 70px;
+    padding: 7px;
+}
+.btn{
+    margin-left: 20px;
+    margin-right: 16px;
+    padding: 18px;
+}
+.show-album{
+    display: flex;
+    
+}
+.album-data{
+    overflow-y: auto;
+    max-height: 200px;
+
+}
+.album-name{
+    
+    box-shadow: 0px 0px 10px -5px black;
+    padding: 3px 0px;
+    height: 43px;
+    margin-top: 19px;
+    width: 64%;
+    border-radius: 10px;
+    margin-left: 16px;
+    cursor: pointer;
+}
+.album-name:hover{
+    border: 2px solid rgb(102, 153, 230);
+
+}
+
+.rem-btn{
+    margin-top: 19px;
+    margin-left: 15px;
+    padding: 20px;
+    cursor: pointer;
+    box-shadow:  0px 0px 10px -5px black;
+    margin-right: 10px;
+}
+
+
+/* #######################33 photo  page functionality */
+
+.title{
+    margin: 45px;
+    font-size: 35px;
+    font-weight: 700;
+}
+.photo-pag{
+    display: flex;
+}
+.left{
+    width: 50%;
+margin-left: -27px;
+
+}
+
+
+.name{
+    width: 50%;
+    /* margin-left: -462px; */
+    margin-right: 15px;
+}
+
+
+.choose-file{
+    /* position: relative; */
+    width: 25%;
+    /* left: -20%; */
+}
+.right{
+    width: 48%;
+text-align: right;
+
+}
+.allimg-delete{
+    margin-right: 20px;
+    right: -15%;
+    font-size: 26px;
+
+}
+.search{
+    width: 50%;
+
+}
+.search-btn{
+    position: relative;
+    right: -17%;
+
+}
+
+.display-img{
+    /* border: 2px solid black; */
+    
+    max-width: 1400px;
+    margin: 0px auto;
+    margin-top: 50px;
+    margin-left: 48px;
+    margin-right: 48px;
+}
+    
+
+
+.img-box{
+    display: flex;
+    gap: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    
+}
+.img{
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    /* border: 2px solid; */
+    /* width: 100%; */
+    /* height: 100%; */
+    object-fit: cover;
+   
+}
+.img-container{
+    position: relative;
+    cursor: pointer;
+}
+.overlay{
+    position: absolute;
+    top: 3%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0,0.6);
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+.img-container:hover .overlay{
+    opacity: 1;
+}
+.chk-box{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    padding: 10px;
+    
+}
+.del-icon{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: white;
+    font-size: 18px;
+}
+.prev-btn{
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    padding: 10px;
+}
+
+/* ##############33333 modal styling */
+.modal .ant-modal-content{
+    background-color: transparent;
+    box-shadow: none;
+    padding:0
+
+}
+.modal .ant-modal-body{
+    padding: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+
+}
+.modal .ant-modal-close{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+/* ###########################33 Apply media quries */
+
+
+
+@media only screen and (max-width:1024px){
+    .aero{
+        color: white;
+        font-size: 40px;
+        position: absolute;
+        top: 38%;
+        right: 29%;
+    }
+    .text {
+        position: relative;
+    top: 50%;
+    /* color: white; */
+    font-weight: 600;
+    padding: 40px;
+    font-size: 50px;
+    }
+    .input-btn Input {
+        width: 85%;
+    }
+    .btn {
+        margin-right: 16px;
+        margin-left: 0px;
+    }
+    .left{
+        margin-left: 5px;
+    }
+    .name {
+        /* position: relative;
+        left: -17%; */
+        width: 50%;
+        margin-right: 15px;
+    }
+    
+    .choose-file {
+        width: 25%;
+    }
+    .right{
+        width: 44%;
+    }
+    .allimg-delete{
+        margin-right: 20px;
+        right: -15%;
+        font-size: 26px;
+    
+    }
+    .search{
+        width: 50%;
+    
+    }
+    
+    .display-img {
+        /* border: 2px solid black; */
+        
+        margin-left: 55px;
+        margin-right: 55px;
+    }
+    .img-box {
+        display: flex;
+        gap: 50px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+/* @media only screen and (max-width:1024px){} */
+
+@media only screen and (max-width:768px){
+    .text {
+        position: relative;
+    top: 50%;
+    /* color: white; */
+    font-weight: 600;
+    padding: 35px  20px;
+    font-size: 50px;
+    }
+    .input-btn Input {
+        width: 85%;
+    }
+    .btn {
+        margin-right: 21px;
+        margin-left: 0px;
+    }
+    .album-name {
+        box-shadow: 0px 0px 10px -5px black;
+        padding: 3px 0px;
+        height: 40px;
+        margin-top: 19px;
+        width: 55%;
+        border-radius: 10px;
+        margin-left: 16px;
+        cursor: pointer;
+    }
+    .rem-btn {
+        margin-top: 19px;
+        margin-left: 16px;
+        padding: 19px;
+        cursor: pointer;
+        box-shadow: 0px 0px 10px -5px black;
+        margin-right: 20px;
+    }
+    .title {
+        margin: 45px;
+        font-size: 24px;
+        font-weight: 700;
+    }.left{
+        margin-left: 5px;
+    }
+    .name {
+        width: 43%;
+        margin-right: 15px;
+    }
+    
+    .choose-file {
+        width: 29%;
+    }
+    .right{
+        width: 42%;
+    }
+    .allimg-delete{
+        margin-right: 20px;
+        right: -15%;
+        font-size: 26px;
+    
+    }
+    .search{
+        width: 50%;
+    
+    }
+    .img-box {
+        display: flex;
+        gap: 50px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .prev-btn {
+        position: absolute;
+        top: 40%;
+        left: 25%;
+        padding: 10px;
+    }
+
+
+}
+@media  screen and (min-width:425px) and (max-width:767px){
+    .text {
+        position: relative;
+    top: 50%;
+    /* color: white; */
+    font-weight: 400;
+    padding: 30px  15px;
+    font-size: 38px;
+    }
+    .password-pag{
+        margin: 90px 50px;
+    }
+    .album {
+        align-self: center;
+        /* border: 2px solid black; */
+        max-width: 400px;
+        margin: 90px 30px;
+        box-shadow: 0px 18px 71px -30px;
+        padding: 40px;
+    }
+    .title {
+        margin: 36px;
+        font-size: 26px;
+        font-weight: 600;
+    }
+    
+    .left{
+        margin-left: 30px;
+        display: grid;
+    }
+    .name {
+        width: 80%;
+        margin-bottom: 15px;
+        margin-right: 15px;
+    }
+    .choose-file {
+        width: 54%;
+    }
+
+    .right{
+        width: 37%;
+        /* display: grid; */
+    }
+    .allimg-delete {
+        margin-right: 5px;
+        right: -15%;
+        font-size: 20px;
+    }
+    .search {
+        width: 84%;
+    }
+    
+    .display-img {
+        
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .img-box {
+        display: flex;
+        gap: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .prev-btn {
+        position: absolute;
+        top: 40%;
+        left: 20%;
+        padding: 5px;
+    }
+
+}
+@media  screen and (min-width:375px) and (max-width:424px){
+    .text {
+        position: relative;
+    top: 50%;
+    /* color: white; */
+    font-weight: 400;
+    padding: 30px  15px;
+    font-size: 35px;
+    }
+    .password-pag{
+        margin: 90px 50px;
+    }
+    .album {
+        align-self: center;
+        /* border: 2px solid black; */
+        max-width: 400px;
+        margin: 90px 30px;
+        box-shadow: 0px 18px 71px -30px;
+        padding: 40px;
+    }
+    .title {
+        margin: 37px;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    
+    .left{
+        margin-left: 30px;
+        display: grid;
+    }
+    .name {
+        width: 80%;
+        margin-bottom: 15px;
+        margin-right: 15px;
+    }
+    .choose-file {
+        width: 54%;
+    }
+
+    .right{
+        width: 34%;
+        /* display: grid; */
+    }
+    .allimg-delete {
+        margin-right: 5px;
+        right: -15%;
+        font-size: 20px;
+        margin-bottom: 26px;
+    }
+    .search {
+        width: 100%;
+    }
+    
+    .display-img {
+        
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .img-box {
+        display: flex;
+        gap: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .prev-btn {
+        position: absolute;
+        top: 40%;
+        left: 25%;
+        padding: 5px;
+    }
+
+}
+@media  screen and (min-width:320px) and (max-width:374px){
+    .text {
+        position: relative;
+    top: 50%;
+    /* color: white; */
+    font-weight: 400;
+    padding: 30px  15px;
+    font-size: 30px;
+    }
+    .password-pag{
+        margin: 90px 50px;
+    }
+    .album {
+        align-self: center;
+        /* border: 2px solid black; */
+        max-width: 400px;
+        margin: 90px 30px;
+        box-shadow: 0px 18px 71px -30px;
+        padding: 40px;
+    }
+    .title {
+        margin: 37px;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    
+    .left{
+        margin-left: 30px;
+        display: grid;
+    }
+    .name {
+        width: 80%;
+        margin-bottom: 15px;
+        margin-right: 15px;
+    }
+    .choose-file {
+        width: 54%;
+    }
+
+    .right{
+        width: 32%;
+        /* display: grid; */
+    }
+    .allimg-delete {
+        margin-right: 5px;
+        right: -15%;
+        font-size: 20px;
+        margin-bottom: 26px;
+    }
+    .search {
+        width: 100%;
+    }
+    
+    .display-img {
+        
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .img-box {
+        display: flex;
+        gap: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .prev-btn {
+        position: absolute;
+        top: 40%;
+        left: 22%;
+        padding: 5px;
+    }
+}
+
+
+
+
+
+
