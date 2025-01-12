@@ -3,9 +3,21 @@
 A simple and elegant React Gallery App to showcase and interact with images in a responsive and user-friendly interface.
 
 
+1. User Authentication
+
+Password Setup:
+
+The user is prompted to set a secure password when accessing the app for the first time.
+
+Password validation checks to ensure strength (e.g., minimum 8 characters, including uppercase, lowercase, numbers, and symbols).
+
+Option to reset the password if forgotten (with identity verification).
+
 Login System:
 
 Users must enter the correct password to access the app.
+
+Three failed attempts result in a temporary lockout
 ## Features
 - Display images in a gallery format.
 - View images in fullscreen mode on click.
