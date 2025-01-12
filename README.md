@@ -16,8 +16,6 @@ Option to reset the password if forgotten (with identity verification).
 Login System:
 
 Users must enter the correct password to access the app.
-
-Three failed attempts result in a temporary lockout
 ## Features
 - Display images in a gallery format.
 - View images in fullscreen mode on click.
