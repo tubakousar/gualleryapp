@@ -53,7 +53,6 @@ View Images:
 
 Images can be viewed in a grid or fullscreen mode.
 
-Slideshow mode for viewing album images sequentially.
 ## Features
 - Display images in a gallery format.
 - View images in fullscreen mode on click.
