@@ -35,6 +35,25 @@ Private Albums:
 
 Option to set individual albums as private (password-protected or hidden).
 
+
+3. Image Management
+
+Add Images to Albums:
+
+Users can upload images to specific albums.
+
+
+
+
+Remove Images:
+
+Users can delete individual or multiple images from albums.
+
+View Images:
+
+Images can be viewed in a grid or fullscreen mode.
+
+Slideshow mode for viewing album images sequentially.
 ## Features
 - Display images in a gallery format.
 - View images in fullscreen mode on click.
