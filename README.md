@@ -52,6 +52,11 @@ Users can delete individual or multiple images from albums.
 View Images:
 
 Images can be viewed in a grid or fullscreen mode.
+4. Privacy and Security
+
+Password Protection:
+
+app are secured with a password.
 
 ## Features
 - Display images in a gallery format.
