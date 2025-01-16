@@ -58,6 +58,20 @@ Password Protection:
 
 app are secured with a password.
 
+5. User Interface (UI)
+
+Dashboard:
+
+The homepage displays all created albums in a visually appealing grid.
+
+
+Album View:
+
+Clicking an album opens its contents (images) in a gallery format.
+
+Search Bar:
+
+Users can search for image by name.
 ## Features
 - Display images in a gallery format.
 - View images in fullscreen mode on click.
