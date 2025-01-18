@@ -72,6 +72,11 @@ Clicking an album opens its contents (images) in a gallery format.
 Search Bar:
 
 Users can search for image by name.
+6. Offline Mode
+
+Users can view previously accessed albums and images without an internet connection.
+
+Images and albums are stored locally until a connection is restored.
 ## Features
 - Display images in a gallery format.
 - View images in fullscreen mode on click.
